@@ -16,6 +16,12 @@ COPY . .
 # Install Node.js and npm (if needed for Figwheel or other tasks)
 RUN apt-get update && apt-get install -y nodejs npm
 
+# Build a static html/js page
+RUN clojure -M:build-prod
+
+# Build the SASS file
+RUN clojure -M:build-sass
+
 # Expose the application port
 EXPOSE 9500
 
