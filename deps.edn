@@ -22,7 +22,7 @@
                                            deraen/sass4clj]}
         datascript/datascript {:mvn/version "0.18.8"}
         datascript-transit/datascript-transit {:mvn/version "0.3.0"}}
- :paths ["src" "resources"]
+ :paths ["src" "resources" "target"]
  :aliases {:fig {:extra-deps
                  {com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
                   com.bhauman/figwheel-main {:mvn/version "0.2.18"}
